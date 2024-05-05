@@ -27,7 +27,7 @@ public class GeracaoController {
         long start = System.currentTimeMillis();
         List<Usuario> usuarios = new ArrayList<>();
         Random random = new Random();
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 1000000; i++) {
             Usuario usuario = new Usuario();
             usuario.setNome("Usuário " + i);
             usuario.setIdade(random.nextInt(120));
