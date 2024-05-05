@@ -27,7 +27,7 @@ public class GeracaoController {
         long start = System.currentTimeMillis();
         List<Usuario> usuarios = new ArrayList<>();
         Random random = new Random();
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 10000; i++) {
             Usuario usuario = new Usuario();
             usuario.setNome("Usuário " + i);
             usuario.setIdade(random.nextInt(120));
@@ -70,7 +70,7 @@ public class GeracaoController {
             // Outros atributos do usuário, se houver
             writer.write("</usuario>\n");
             writer.close();
-            System.out.println("Arquivo XML " + nomeArquivo + " salvo com sucesso.");
+            System.out.println("Arquivo XML " + nomeArquivo + " salvo com sucesso." + " no path:" + System.getProperty("user.dir"));
         } catch (IOException e) {
             System.err.println("Erro ao salvar o arquivo XML " + nomeArquivo + ": " + e.getMessage());
         }
