@@ -47,7 +47,7 @@ public class GeracaoController {
 
         long elapsed = System.currentTimeMillis() - start;
 
-        System.out.println("Tempo de execucao em segundos: " + elapsed/1000 + "s" + ", em minutos" +elapsed/60);
+        System.out.println("Tempo de execucao em segundos: " + elapsed/1000 + "s");
 
         return "Tempo de execucao em segundos " + elapsed/1000 + "s";
     }
